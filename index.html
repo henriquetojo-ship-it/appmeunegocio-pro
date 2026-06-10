@@ -203,7 +203,7 @@
   <div class="container utility-inner">
     <div class="utility-left">
       <span>🇧🇷 Brasil · Português (BR)</span>
-      <span class="util-pill">✓ LGPD compliant</span>
+      <button onclick="document.getElementById('lgpd-modal').style.display='flex'" style="background:rgba(255,255,255,.1);padding:2px 8px;border-radius:999px;font-weight:600;border:none;color:rgba(255,255,255,.85);cursor:pointer;font-size:12.5px;font-family:inherit">✓ LGPD compliant</button>
       <a href="#multiplat" class="util-store" aria-label="Baixar na App Store">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 12.46c-.02-2.4 1.96-3.55 2.05-3.61-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.59.8 1.16 1.75 2.46 3 2.42 1.21-.05 1.67-.78 3.13-.78 1.46 0 1.87.78 3.15.75 1.3-.02 2.12-1.18 2.91-2.35.92-1.35 1.3-2.65 1.32-2.72-.03-.01-2.54-.97-2.57-3.83zM15.13 5.42c.67-.81 1.12-1.94 1-3.07-.96.04-2.13.64-2.82 1.45-.62.72-1.16 1.87-1.02 2.98 1.07.08 2.16-.55 2.84-1.36z"/></svg>
         <span>App Store</span>
@@ -214,10 +214,10 @@
       </a>
     </div>
     <div class="utility-right">
-      <a href="#parceiros">Para parceiros</a>
-      <a href="#suporte">Suporte</a>
-      <a href="#blog">Blog</a>
-      <a href="#login">Entrar →</a>
+      <a href="mailto:parceiros@appmeunegocio.pro">Para parceiros</a>
+      <a href="mailto:suporte@appmeunegocio.pro">Suporte</a>
+      <a href="#recursos">Blog</a>
+      <a href="https://app-meunegocio-pro.base44.app" target="_blank" rel="noopener">Entrar →</a>
     </div>
   </div>
 </div>
@@ -225,8 +225,7 @@
 <!-- NAV -->
 <nav class="nav">
   <div class="container nav-inner">
-    <a href="/" class="logo">
-      <img src="data:image/png;base64,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" alt="Meu Negócio Pró" style="width:36px;height:36px;border-radius:10px;object-fit:cover;flex:none">
+    <a href="/" class="logo"><img src="data:image/png;base64,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" alt="Meu Negócio Pró" style="width:36px;height:36px;border-radius:10px;object-fit:contain;flex:none;background:transparent">
       <span>Meu Negócio Pró</span>
     </a>
     <div class="nav-links" id="navLinks">
@@ -238,7 +237,7 @@
       <a href="#recursos">Recursos <span class="chev">▾</span></a>
     </div>
     <div class="nav-cta">
-      <a href="#login" class="btn btn-ghost">Entrar</a>
+      <a href="https://app-meunegocio-pro.base44.app" target="_blank" rel="noopener" class="btn btn-ghost">Entrar</a>
       <a href="https://app-meunegocio-pro.base44.app" target="_blank" rel="noopener" class="btn btn-primary">Começar grátis</a>
     </div>
     <button class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
@@ -267,11 +266,11 @@
         <div class="store-badges">
           <a href="#" class="store-badge" aria-label="Baixar na App Store" style="opacity:.45;pointer-events:none;" title="Em breve">
             <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 12.46c-.02-2.4 1.96-3.55 2.05-3.61-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.59.8 1.16 1.75 2.46 3 2.42 1.21-.05 1.67-.78 3.13-.78 1.46 0 1.87.78 3.15.75 1.3-.02 2.12-1.18 2.91-2.35.92-1.35 1.3-2.65 1.32-2.72-.03-.01-2.54-.97-2.57-3.83zM15.13 5.42c.67-.81 1.12-1.94 1-3.07-.96.04-2.13.64-2.82 1.45-.62.72-1.16 1.87-1.02 2.98 1.07.08 2.16-.55 2.84-1.36z"/></svg></span>
-            <span class="tx"><small>Baixe na</small><strong>App Store</strong></span>
+            <span class="tx"><small>Baixe na</small><strong>App Store</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span></span>
           </a>
           <a href="#" class="store-badge" aria-label="Baixar no Google Play" style="opacity:.45;pointer-events:none;" title="Em breve">
             <span class="ic"><svg viewBox="0 0 24 24"><path fill="#EA4335" d="M3.6 2.3c-.4.4-.6 1-.6 1.7v16c0 .7.2 1.3.6 1.7l12-9.7-12-9.7z"/><path fill="#FBBC04" d="M19.6 9.6l-3.9-2.2-3.2 2.6 3.2 2.6 4-2.3c.6-.4.9-.9.9-1.3s-.3-1-1-1.4z"/><path fill="#4285F4" d="M3.6 21.7l12-9.7 3.2 2.6L4.2 22.1c-.2.1-.4.1-.6-.1l-.2-.2z"/><path fill="#34A853" d="M3.6 2.3l12 9.7-3.2 2.6L3.6 21.7c.4.4.9.4 1.3.1l11.3-9.7-12-9.7-.6-.1z"/></svg></span>
-            <span class="tx"><small>Disponível no</small><strong>Google Play</strong></span>
+            <span class="tx"><small>Disponível no</small><strong>Google Play</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span></span>
           </a>
           <a href="https://app-meunegocio-pro.base44.app" target="_blank" rel="noopener" class="store-badge pwa" aria-label="Usar versão web (PWA)">
             <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></span>
@@ -419,7 +418,7 @@
       <p>Vendas, estoque, finanças, clientes e inteligência integrados de verdade. Sem "puxa-puxa" entre sistemas, sem planilha intermediária, sem retrabalho.</p>
     </div>
     <div class="modules-grid">
-      <div class="module-card">
+      <div class="module-card"><div style="position:absolute;top:12px;right:12px;background:#f59e0b;color:white;font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase">Em breve</div><div style="position:absolute;top:12px;right:12px;background:#f59e0b;color:white;font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase">Em breve</div><div style="position:absolute;top:12px;right:12px;background:#f59e0b;color:white;font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase">Em breve</div>
         <div class="mod-icon">🛒</div>
         <h3>PDV & Vendas</h3>
         <p>Catálogo, atalhos, formas de pagamento, recibo no WhatsApp. Funciona offline e sincroniza sozinho.</p>
@@ -459,19 +458,19 @@
         <div class="mod-icon w">📅</div>
         <h3>Agenda & Profissionais</h3>
         <p>Agendamento online, controle de horários, comissão por profissional, pacotes e fidelidade.</p>
-        <a href="#" class="mod-link">Conhecer módulo →</a>
+        <a href="#precos" class="mod-link">Conhecer módulo →</a>
       </div>
       <div class="module-card">
         <div class="mod-icon b">🧾</div>
         <h3>Fiscal & NF-e</h3>
         <p>Emissão de NFC-e e NF-e, CNPJ, MEI, simples nacional. Integração direta com seu contador.</p>
-        <a href="#" class="mod-link">Conhecer módulo →</a>
+        <a href="#precos" class="mod-link">Conhecer módulo →</a>
       </div>
       <div class="module-card">
         <div class="mod-icon">💬</div>
         <h3>WhatsApp & Comunicação</h3>
         <p>Recibos automáticos, lembretes, cobrança gentil, campanhas segmentadas — direto pelo WhatsApp oficial.</p>
-        <a href="#" class="mod-link">Conhecer módulo →</a>
+        <a href="#precos" class="mod-link">Conhecer módulo →</a>
       </div>
     </div>
   </div>
@@ -877,7 +876,7 @@ function vt(btn,v){
       <div class="mp-content">
         <span class="section-tag">Multi-plataforma · 100% sincronizado</span>
         <h2>Funciona no <span class="hl">celular, tablet e computador</span> — onde você estiver</h2>
-        <p class="lead">Baixe o app nativo na <strong>App Store</strong> (iOS) ou na <strong>Google Play</strong> (Android), ou acesse direto pelo navegador. Seus dados ficam sincronizados em todos os dispositivos, em tempo real.</p>
+        <p class="lead">Baixe o app nativo na <strong>App Store</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span> (iOS) ou na <strong>Google Play</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span> (Android), ou acesse direto pelo navegador. Seus dados ficam sincronizados em todos os dispositivos, em tempo real.</p>
 
         <div class="mp-features">
           <div class="mp-feat">
@@ -899,11 +898,11 @@ function vt(btn,v){
           <div class="mp-stores-row">
             <a href="#" class="store-badge" aria-label="App Store" style="opacity:.45;pointer-events:none;" title="Em breve">
               <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 12.46c-.02-2.4 1.96-3.55 2.05-3.61-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.59.8 1.16 1.75 2.46 3 2.42 1.21-.05 1.67-.78 3.13-.78 1.46 0 1.87.78 3.15.75 1.3-.02 2.12-1.18 2.91-2.35.92-1.35 1.3-2.65 1.32-2.72-.03-.01-2.54-.97-2.57-3.83zM15.13 5.42c.67-.81 1.12-1.94 1-3.07-.96.04-2.13.64-2.82 1.45-.62.72-1.16 1.87-1.02 2.98 1.07.08 2.16-.55 2.84-1.36z"/></svg></span>
-              <span class="tx"><small>Baixe na</small><strong>App Store</strong></span>
+              <span class="tx"><small>Baixe na</small><strong>App Store</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span></span>
             </a>
             <a href="#" class="store-badge" aria-label="Google Play" style="opacity:.45;pointer-events:none;" title="Em breve">
               <span class="ic"><svg viewBox="0 0 24 24"><path fill="#EA4335" d="M3.6 2.3c-.4.4-.6 1-.6 1.7v16c0 .7.2 1.3.6 1.7l12-9.7-12-9.7z"/><path fill="#FBBC04" d="M19.6 9.6l-3.9-2.2-3.2 2.6 3.2 2.6 4-2.3c.6-.4.9-.9.9-1.3s-.3-1-1-1.4z"/><path fill="#4285F4" d="M3.6 21.7l12-9.7 3.2 2.6L4.2 22.1c-.2.1-.4.1-.6-.1l-.2-.2z"/><path fill="#34A853" d="M3.6 2.3l12 9.7-3.2 2.6L3.6 21.7c.4.4.9.4 1.3.1l11.3-9.7-12-9.7-.6-.1z"/></svg></span>
-              <span class="tx"><small>Disponível no</small><strong>Google Play</strong></span>
+              <span class="tx"><small>Disponível no</small><strong>Google Play</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span></span>
             </a>
           </div>
           <a href="https://app-meunegocio-pro.base44.app" target="_blank" rel="noopener" class="mp-pwa-link">
@@ -1161,7 +1160,7 @@ function vt(btn,v){
         <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=4bafdc5e4f5546c4ae14c1ffd2d5ef3b" target="_blank" rel="noopener" id="btn-business" class="btn btn-secondary">Assinar Business</a>
       </div>
     </div>
-    <p class="pricing-foot">💳 Pagamento via Pix, cartão ou boleto · 🛡️ 7 dias de garantia · 🔓 Cancele quando quiser · <a href="#">Comparar planos completos →</a></p>
+    <p class="pricing-foot">💳 Pagamento via Pix, cartão ou boleto · 🛡️ 7 dias de garantia · 🔓 Cancele quando quiser · <a href="#precos">Comparar planos completos →</a></p>
   </div>
 </section>
 <script>function pt(btn,t){document.querySelectorAll('.pt-opt').forEach(o=>o.classList.remove('active'));btn.classList.add('active')}</script>
@@ -1233,11 +1232,11 @@ function vt(btn,v){
     <div class="res-grid">
       <article class="res-card">
         <div class="res-cover"><span class="cat">Finanças</span><span class="em">💰</span><div class="ttl">Como calcular o lucro real do seu negócio em 4 passos</div></div>
-        <div class="res-body"><p>O guia simples e definitivo para você parar de confundir faturamento com lucro — e finalmente saber quanto está sobrando no fim do mês.</p><div class="res-meta"><span>📖 6 min de leitura</span><a href="#">Ler agora →</a></div></div>
+        <div class="res-body"><p>O guia simples e definitivo para você parar de confundir faturamento com lucro — e finalmente saber quanto está sobrando no fim do mês.</p><div class="res-meta"><span>📖 6 min de leitura</span><a href="#" onclick="document.getElementById('artigo-1').style.display='flex';return false">Ler agora →</a></div></div>
       </article>
       <article class="res-card">
         <div class="res-cover c2"><span class="cat">Estoque</span><span class="em">📦</span><div class="ttl">Ficha técnica: por que ela é o coração do seu restaurante</div></div>
-        <div class="res-body"><p>Aprenda a montar uma ficha técnica que controla custo, padroniza receita e finalmente revela qual prato é o seu campeão de margem.</p><div class="res-meta"><span>📖 8 min de leitura</span><a href="#">Ler agora →</a></div></div>
+        <div class="res-body"><p>Aprenda a montar uma ficha técnica que controla custo, padroniza receita e finalmente revela qual prato é o seu campeão de margem.</p><div class="res-meta"><span>📖 8 min de leitura</span><a href="#" onclick="document.getElementById(\'artigo-2\').style.display=\'flex\';return false" style="color:#6c5ce7;font-weight:700;display:inline-flex;align-items:center;gap:4px;transition:all .15s">Ler agora →</a></div></div>
       </article>
       <article class="res-card">
         <div class="res-cover c3"><span class="cat">Vendas</span><span class="em">📈</span><div class="ttl">5 mensagens de WhatsApp que trazem o cliente de volta</div></div>
@@ -1317,11 +1316,11 @@ function vt(btn,v){
         <div class="store-badges">
           <a href="#" class="store-badge" aria-label="Baixar na App Store">
             <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 12.46c-.02-2.4 1.96-3.55 2.05-3.61-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.59.8 1.16 1.75 2.46 3 2.42 1.21-.05 1.67-.78 3.13-.78 1.46 0 1.87.78 3.15.75 1.3-.02 2.12-1.18 2.91-2.35.92-1.35 1.3-2.65 1.32-2.72-.03-.01-2.54-.97-2.57-3.83zM15.13 5.42c.67-.81 1.12-1.94 1-3.07-.96.04-2.13.64-2.82 1.45-.62.72-1.16 1.87-1.02 2.98 1.07.08 2.16-.55 2.84-1.36z"/></svg></span>
-            <span class="tx"><small>Baixe na</small><strong>App Store</strong></span>
+            <span class="tx"><small>Baixe na</small><strong>App Store</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span></span>
           </a>
           <a href="#" class="store-badge" aria-label="Baixar no Google Play">
             <span class="ic"><svg viewBox="0 0 24 24"><path fill="#EA4335" d="M3.6 2.3c-.4.4-.6 1-.6 1.7v16c0 .7.2 1.3.6 1.7l12-9.7-12-9.7z"/><path fill="#FBBC04" d="M19.6 9.6l-3.9-2.2-3.2 2.6 3.2 2.6 4-2.3c.6-.4.9-.9.9-1.3s-.3-1-1-1.4z"/><path fill="#4285F4" d="M3.6 21.7l12-9.7 3.2 2.6L4.2 22.1c-.2.1-.4.1-.6-.1l-.2-.2z"/><path fill="#34A853" d="M3.6 2.3l12 9.7-3.2 2.6L3.6 21.7c.4.4.9.4 1.3.1l11.3-9.7-12-9.7-.6-.1z"/></svg></span>
-            <span class="tx"><small>Disponível no</small><strong>Google Play</strong></span>
+            <span class="tx"><small>Disponível no</small><strong>Google Play</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span></span>
           </a>
           <a href="#" class="store-badge pwa" aria-label="Usar versão web">
             <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></span>
@@ -1364,18 +1363,18 @@ function vt(btn,v){
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo">
-          <span class="logo-mark">M</span>
+          <img src="data:image/png;base64,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" alt="Meu Negócio Pró" style="width:36px;height:36px;border-radius:10px;object-fit:contain;flex:none;background:transparent">
           <span>Meu Negócio Pró</span>
         </div>
         <p>O copiloto inteligente do pequeno empreendedor brasileiro. Vendas, estoque, finanças e clientes — tudo num só app, direto do celular.</p>
         <div class="footer-stores">
           <a href="#" class="store-badge" aria-label="App Store">
             <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 12.46c-.02-2.4 1.96-3.55 2.05-3.61-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.59.8 1.16 1.75 2.46 3 2.42 1.21-.05 1.67-.78 3.13-.78 1.46 0 1.87.78 3.15.75 1.3-.02 2.12-1.18 2.91-2.35.92-1.35 1.3-2.65 1.32-2.72-.03-.01-2.54-.97-2.57-3.83zM15.13 5.42c.67-.81 1.12-1.94 1-3.07-.96.04-2.13.64-2.82 1.45-.62.72-1.16 1.87-1.02 2.98 1.07.08 2.16-.55 2.84-1.36z"/></svg></span>
-            <span class="tx"><small>Baixe na</small><strong>App Store</strong></span>
+            <span class="tx"><small>Baixe na</small><strong>App Store</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span></span>
           </a>
           <a href="#" class="store-badge" aria-label="Google Play">
             <span class="ic"><svg viewBox="0 0 24 24"><path fill="#EA4335" d="M3.6 2.3c-.4.4-.6 1-.6 1.7v16c0 .7.2 1.3.6 1.7l12-9.7-12-9.7z"/><path fill="#FBBC04" d="M19.6 9.6l-3.9-2.2-3.2 2.6 3.2 2.6 4-2.3c.6-.4.9-.9.9-1.3s-.3-1-1-1.4z"/><path fill="#4285F4" d="M3.6 21.7l12-9.7 3.2 2.6L4.2 22.1c-.2.1-.4.1-.6-.1l-.2-.2z"/><path fill="#34A853" d="M3.6 2.3l12 9.7-3.2 2.6L3.6 21.7c.4.4.9.4 1.3.1l11.3-9.7-12-9.7-.6-.1z"/></svg></span>
-            <span class="tx"><small>Disponível no</small><strong>Google Play</strong></span>
+            <span class="tx"><small>Disponível no</small><strong>Google Play</strong><span style="font-size:9px;opacity:.7;display:block;margin-top:1px">Em breve</span></span>
           </a>
         </div>
       </div>
@@ -1443,5 +1442,128 @@ function vt(btn,v){
   </div>
 </footer>
 
+<!-- LGPD MODAL -->
+<div id="lgpd-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;align-items:center;justify-content:center;padding:24px" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;border-radius:20px;max-width:640px;width:100%;max-height:80vh;overflow-y:auto;padding:36px 32px;position:relative">
+    <button onclick="document.getElementById('lgpd-modal').style.display='none'" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#71717a">✕</button>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+      <div style="width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#6c5ce7,#3d2491);display:grid;place-items:center;color:white;font-size:20px;flex:none">🛡️</div>
+      <div><h2 style="font-size:20px;font-weight:800;color:#2d1b69;margin:0">Política de Privacidade & LGPD</h2><p style="font-size:13px;color:#71717a;margin:2px 0 0">Meu Negócio Pró — Atualizado em Junho de 2026</p></div>
+    </div>
+    <div style="font-size:14px;color:#3f3f46;line-height:1.65">
+      <h3 style="font-size:15px;font-weight:700;color:#2d1b69;margin:0 0 8px">1. Quem somos</h3>
+      <p style="margin:0 0 16px">O Meu Negócio Pró é uma plataforma de gestão para microempreendedores brasileiros, operada nos termos da Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018). Somos o controlador dos dados que você nos fornece ao usar nosso serviço.</p>
+      <h3 style="font-size:15px;font-weight:700;color:#2d1b69;margin:0 0 8px">2. Dados que coletamos</h3>
+      <p style="margin:0 0 8px">Coletamos apenas os dados necessários para a prestação do serviço:</p>
+      <ul style="margin:0 0 16px;padding-left:20px">
+        <li><strong>Dados de cadastro:</strong> nome, e-mail, CPF/CNPJ, telefone</li>
+        <li><strong>Dados do negócio:</strong> produtos, vendas, estoque, clientes cadastrados por você</li>
+        <li><strong>Dados de uso:</strong> logs de acesso, funcionalidades utilizadas (para melhorias)</li>
+        <li><strong>Dados de pagamento:</strong> processados integralmente pelo Mercado Pago — não armazenamos dados de cartão</li>
+      </ul>
+      <h3 style="font-size:15px;font-weight:700;color:#2d1b69;margin:0 0 8px">3. Como usamos seus dados</h3>
+      <ul style="margin:0 0 16px;padding-left:20px">
+        <li>Prestar e melhorar os serviços da plataforma</li>
+        <li>Enviar comunicações transacionais (confirmações, alertas do sistema)</li>
+        <li>Cumprir obrigações legais e regulatórias</li>
+        <li>Não vendemos, alugamos nem compartilhamos seus dados com terceiros para fins de marketing</li>
+      </ul>
+      <h3 style="font-size:15px;font-weight:700;color:#2d1b69;margin:0 0 8px">4. Seus direitos (LGPD)</h3>
+      <p style="margin:0 0 8px">Você tem direito a:</p>
+      <ul style="margin:0 0 16px;padding-left:20px">
+        <li>Acessar, corrigir ou excluir seus dados pessoais</li>
+        <li>Solicitar a portabilidade dos seus dados</li>
+        <li>Revogar consentimentos dados anteriormente</li>
+        <li>Ser informado sobre compartilhamentos realizados</li>
+      </ul>
+      <p style="margin:0 0 16px">Para exercer qualquer direito: <a href="mailto:privacidade@appmeunegocio.pro" style="color:#6c5ce7;font-weight:600">privacidade@appmeunegocio.pro</a></p>
+      <h3 style="font-size:15px;font-weight:700;color:#2d1b69;margin:0 0 8px">5. Armazenamento e segurança</h3>
+      <p style="margin:0 0 16px">Seus dados são armazenados em servidores no Brasil com criptografia em trânsito (TLS 1.3) e em repouso (AES-256). Realizamos backups automáticos diários e testes de segurança periódicos.</p>
+      <h3 style="font-size:15px;font-weight:700;color:#2d1b69;margin:0 0 8px">6. Retenção de dados</h3>
+      <p style="margin:0 0 16px">Mantemos seus dados enquanto sua conta estiver ativa. Ao cancelar, você tem 30 dias para exportar seus dados. Após esse período, os dados são anonimizados ou excluídos, salvo obrigação legal de retenção.</p>
+      <h3 style="font-size:15px;font-weight:700;color:#2d1b69;margin:0 0 8px">7. Cookies</h3>
+      <p style="margin:0 0 16px">Utilizamos apenas cookies funcionais essenciais para o funcionamento da plataforma. Não utilizamos cookies de rastreamento de terceiros ou de publicidade.</p>
+      <h3 style="font-size:15px;font-weight:700;color:#2d1b69;margin:0 0 8px">8. Contato e DPO</h3>
+      <p style="margin:0 0 4px">Encarregado de Proteção de Dados (DPO):</p>
+      <p style="margin:0"><a href="mailto:privacidade@appmeunegocio.pro" style="color:#6c5ce7;font-weight:600">privacidade@appmeunegocio.pro</a></p>
+    </div>
+  </div>
+</div>
+<!-- ARTIGO 1 MODAL -->
+<div id="artigo-1" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;align-items:center;justify-content:center;padding:24px" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;border-radius:20px;max-width:640px;width:100%;max-height:80vh;overflow-y:auto;padding:36px 32px;position:relative">
+    <button onclick="document.getElementById('artigo-1').style.display='none'" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#71717a">✕</button>
+    <h2 style="font-size:24px;font-weight:800;color:#2d1b69;margin:0 0 16px">Como calcular o lucro real do seu negócio em 4 passos</h2>
+    <div style="font-size:14px;color:#3f3f46;line-height:1.75">
+      <p style="margin:0 0 16px">Calcular o lucro real é fundamental para entender se seu negócio está realmente lucrativo. Muitos empreendedores confundem receita com lucro, o que leva a decisões financeiras incorretas. Neste artigo, vamos aprender um método prático em 4 passos.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">Passo 1: Separe as finanças pessoais das do negócio</h3>
+      <p style="margin:0 0 12px">O primeiro erro de muitos empreendedores é misturar contas pessoais com as do negócio. Abra uma conta bancária exclusiva para sua empresa. Toda receita entra lá, e todas as despesas saem dali. Isso torna o cálculo muito mais claro.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">Passo 2: Rastreie todas as despesas (fixas e variáveis)</h3>
+      <p style="margin:0 0 12px"><strong>Despesas fixas:</strong> aluguel, internet, salários, seguros. Têm o mesmo valor todo mês. <strong>Despesas variáveis:</strong> matéria-prima, embalagem, combustível. Mudam conforme o volume de vendas. Liste todas, do maior ao menor detalhe — até um café de cliente conta se é para o negócio.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">Passo 3: Calcule margem bruta e lucro líquido por produto</h3>
+      <p style="margin:0 0 12px"><strong>Margem bruta</strong> = (Preço de venda - Custo direto) / Preço de venda × 100. <strong>Lucro líquido</strong> = Receita total - Todas as despesas (fixas + variáveis). Produtos com margem alta são teus melhores aliados. Produtos com margem baixa consomem tempo sem compensar.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">Passo 4: Use o dashboard para monitorar em tempo real</h3>
+      <p style="margin:0 0 16px">Com o Meu Negócio Pró, você visualiza em tempo real: receita do dia, despesas lançadas, margem de cada venda, lucro acumulado do mês. O dashboard atualiza conforme você registra vendas, evitando surpresas no final do mês.</p>
+      
+      <p style="margin:0;font-weight:700;color:#6c5ce7">Comece hoje mesmo a acompanhar seu lucro real. Assine a plataforma e domine as finanças do seu negócio.</p>
+    </div>
+  </div>
+</div>
+<!-- ARTIGO 2 MODAL -->
+<div id="artigo-2" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;align-items:center;justify-content:center;padding:24px" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;border-radius:20px;max-width:640px;width:100%;max-height:80vh;overflow-y:auto;padding:36px 32px;position:relative">
+    <button onclick="document.getElementById('artigo-2').style.display='none'" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#71717a">✕</button>
+    <h2 style="font-size:24px;font-weight:800;color:#2d1b69;margin:0 0 16px">Ficha técnica: por que ela é o coração do seu restaurante</h2>
+    <div style="font-size:14px;color:#3f3f46;line-height:1.75">
+      <p style="margin:0 0 16px">Se você trabalha com alimentos, sabe que o controle de custos é essencial. A <strong>ficha técnica</strong> é a ferramenta que transforma o caos em organização. É um documento que lista todos os ingredientes de um prato, suas quantidades e custos.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">O que é uma ficha técnica?</h3>
+      <p style="margin:0 0 12px">Uma ficha técnica é um registro detalhado com: nome do prato, modo de preparo, lista completa de ingredientes (com quantidade e custo unitário), custo total do prato, preço de venda sugerido, e margem de lucro. Parece simples, mas é o espinha dorsal da gestão do seu restaurante.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">Por que ela é tão importante?</h3>
+      <p style="margin:0 0 12px">Sem ficha técnica, você não sabe exatamente quanto custa cada prato. Se seus custos de ingredientes sobem (preço da carne, óleo, queijo), seu prato fica menos lucrativo sem você perceber. Com a ficha, ajusta o preço quando precisa, e mantém a margem estável.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">Como construir uma ficha técnica</h3>
+      <p style="margin:0 0 12px">1) Liste cada ingrediente e sua quantidade (100g de carne, 2 ovos, etc). 2) Pesquise o custo de cada ingrediente (sempre atualize preços). 3) Multiplique quantidade × custo = custo do ingrediente. 4) Soma todos = custo total do prato. 5) Divida por porções = custo por porção. 6) Defina margem desejada (30-40%) e calcule preço final.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">Automação com o Meu Negócio Pró</h3>
+      <p style="margin:0 0 16px">Você cria a ficha técnica uma vez na plataforma. Cada vez que uma venda daquele prato é realizada, o app automaticamente deduz o estoque dos ingredientes. Sem trabalho manual, sem erros de contagem. Você sabe sempre quanto tem em estoque e quanto cada venda custou.</p>
+      
+      <p style="margin:0;font-weight:700;color:#6c5ce7">Organize suas fichas técnicas agora e ganhe controle total do seu cardápio.</p>
+    </div>
+  </div>
+</div>
+<!-- ARTIGO 3 MODAL -->
+<div id="artigo-3" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;align-items:center;justify-content:center;padding:24px" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;border-radius:20px;max-width:640px;width:100%;max-height:80vh;overflow-y:auto;padding:36px 32px;position:relative">
+    <button onclick="document.getElementById('artigo-3').style.display='none'" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#71717a">✕</button>
+    <h2 style="font-size:24px;font-weight:800;color:#2d1b69;margin:0 0 16px">5 mensagens de WhatsApp que trazem o cliente de volta</h2>
+    <div style="font-size:14px;color:#3f3f46;line-height:1.75">
+      <p style="margin:0 0 16px">WhatsApp é o canal direto com seus clientes. Mensagens bem-feitas recuperam vendas perdidas e fortalecem relacionamento. Aqui estão 5 templates prontos para usar.</p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">1. Mensagem de boas-vindas (novo cliente)</h3>
+      <p style="margin:0 0 12px;background:#f1ecff;padding:12px;border-radius:8px;border-left:3px solid #6c5ce7"><em>"Oi [NOME]! Bem-vindo! Somos [NOME DA EMPRESA]. Qualquer dúvida sobre nossos produtos, é só chamar. Estamos aqui para ajudar 😊"</em></p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">2. Follow-up após compra</h3>
+      <p style="margin:0 0 12px;background:#f1ecff;padding:12px;border-radius:8px;border-left:3px solid #6c5ce7"><em>"Oi [NOME]! Tudo bem com você? Recebeu seu pedido de [DATA]? Ficamos felizes em saber se chegou tudo certo. Volta sempre! 💙"</em></p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">3. Re-engajamento (cliente inativo 30+ dias)</h3>
+      <p style="margin:0 0 12px;background:#f1ecff;padding:12px;border-radius:8px;border-left:3px solid #6c5ce7"><em>"Opa [NOME], faz um tempo que não nos vê! 👀 Temos novidades para você. Que tal uma [PRODUTO NOVO]? Estou reservando um desconto especial só para você. Manda um oi!"</em></p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">4. Mensagem de aniversário</h3>
+      <p style="margin:0 0 12px;background:#f1ecff;padding:12px;border-radius:8px;border-left:3px solid #6c5ce7"><em>"Feliz aniversário [NOME]! 🎉 Você merece um presente. Use o código FELIZ20 e ganhe 20% de desconto em qualquer compra. A gente aprecia você!"</em></p>
+      
+      <h3 style="font-size:16px;font-weight:700;color:#2d1b69;margin:16px 0 8px">5. Cobrança gentil (pagamento atrasado)</h3>
+      <p style="margin:0 0 12px;background:#f1ecff;padding:12px;border-radius:8px;border-left:3px solid #6c5ce7"><em>"Oi [NOME], tudobem? Vi aqui que sua fatura venceu no dia [DATA]. Sem problemas! É só confirmar se recebeu o boleto ou se precisa de ajuda. Estou por aqui! 😊"</em></p>
+      
+      <p style="margin:16px 0;color:#6c5ce7"><strong>Dica:</strong> Personalize sempre com o nome do cliente e produto específico. Mensagens genéricas não convertem.</p>
+      <p style="margin:0;font-weight:700;color:#6c5ce7">Integre WhatsApp ao Meu Negócio Pró e automatize essas mensagens por segmento de cliente.</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
